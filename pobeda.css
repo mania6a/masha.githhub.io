@@ -1,0 +1,116 @@
+body{
+    width: 100vw;
+    height: 100vh;
+   /*
+   // background-image: url("images/win.jpg");
+   */
+}
+body img{
+    width: 60vw;
+    height: 80vh;
+    opacity: 0.2;
+}
+#cont{
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 170px;
+    letter-spacing: 2vw;
+    margin: 0px;
+}
+@keyframes exampleImg {
+    from {visibility: visible}
+    to {visibility: hidden}
+}
+span img{
+    width: 5vw;
+    height: 10vh;
+    animation-name: exampleImg;
+    animation-duration: 0.25s;
+    animation-iteration-count: 4;
+}
+.span{
+    width: 7vw;
+    height: 20vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+.div{
+    width: 7vw;
+    height: 20vh;
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+}
+
+.divIn{
+    width: 1vw;
+    height: 3vh;
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+}
+@keyframes example1 {
+    0% {font-size: 170px}
+    100% {
+        font-size: 0px; color: white}
+}
+.first{
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes example2 {
+    0% {left: -25%; top: 0%}
+    100% {left: -300%; transform: rotate(-720deg)}
+}
+.second{
+    position: absolute;
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes example3 {
+    0% {top: 0%; left: -30%}
+    20% {top: -100%; left: -60%}
+    40% {top: 0%; left: -90%}
+    60% {top: -100%; left: -120%}
+    80% {top: 0%; left: -150%}
+    100% {top: -100%; left: -185%/*;color: red*/}
+}
+.third{
+    position: absolute;
+    animation-name: example3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes example4 {
+    0%{top: 0%}
+    50%{transform: rotate(-90deg)/*; color: aqua*/}
+    100%{top: 250%}
+}
+.forth{
+    position: absolute;
+    left: -45%;
+    animation-name: example4;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
+}
+@keyframes example5 {
+    0%{top: 0%; /*color: orange*/}
+    100%{top: -400%/*; color: darkorange*/}
+
+}
+.fifth{
+    position: absolute;
+    left: -85%;
+    animation-name: example5;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
